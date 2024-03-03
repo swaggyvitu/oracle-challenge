@@ -31,6 +31,21 @@ main {
 
 /* TEXTO */
 
+#texto{
+  width: 100%;
+  color: #0A3871;
+  font-size: 1.5rem;
+  background:#E5E5E5;
+}
+#texto::-webkit-input-placeholder {
+  color: #0A3871;
+  font-size: 1.5rem;
+}
+
+#campo{
+  font-size: 1.4rem;
+}
+
 .texto-area {
   display: flex;
   flex-direction: column;
@@ -39,7 +54,7 @@ main {
 
 
 div>textarea {
-
+  
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   color: #0A3871;
@@ -114,12 +129,12 @@ p {
 .barra-lateral {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
-  width: 23%;
-  height: 33rem;
+  max-width: 400px;
+  width: 100%;
+  margin-right: 2.5rem;
   background: white;
-  border-radius: 2rem;
-  padding: 2rem;
-  margin-top: -4rem;
+  border-radius: 32px;
+  margin-top: -3rem;
 
   display: flex;
   flex-direction: column;
@@ -128,6 +143,10 @@ p {
   align-items: center;
 }
 
+
+#imagem {
+  margin: 0rem 2rem;
+}
 
 .info {
   box-sizing: border-box;
@@ -146,7 +165,7 @@ p {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-
+  margin: 0rem 2rem;
   text-overflow: clip;
 }
 
@@ -154,7 +173,7 @@ p {
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-
+  margin: 0rem 2rem;
   text-overflow: clip;
 }
 
@@ -213,11 +232,23 @@ footer a {
   }
 
   .barra-lateral {
-    width: 80%;
-    height: 27rem;
+    width: 90%;
+    height: 30rem;
 
     margin: 2rem auto;
 
+  }
+
+  #texto{
+    width: 90%;
+    color: #0A3871;
+    font-size: 1.2em;
+    background:#E5E5E5;
+  }
+  #texto::-webkit-input-placeholder {
+    color: #0A3871;
+    font-size: 1.2rem;
+   
   }
 
   .botoes {
@@ -230,8 +261,35 @@ footer a {
     margin-left: 0rem;
   }
 
+  #botao-cripto{
+    padding: 1.5rem 6rem;
+  }
+
   #botao-descripto{
     margin-top: 1rem;
+    padding: 1.5rem 5rem;
+  }
+
+  #imagem {
+    height: 13rem;
+    margin: 0rem 2rem;
+  }
+
+  #texto-trocar {
+    font-size: 1rem;
+  
+    margin: 0rem 2rem;
+    text-overflow: clip;
+  }
+  
+  #sem-c-especiais {
+    font-size: 1rem;
+    margin: 1rem 2rem;
+    text-overflow: clip;
+  }
+
+ #campo{
+    font-size: 1.2rem;
   }
 
   #imagem {
@@ -240,7 +298,7 @@ footer a {
   }
 
   div>textarea {
-    margin-left: 0rem;
+    margin-left: 1rem;
     font-size: 1.3rem;
 
   }
@@ -273,6 +331,28 @@ footer a {
     margin-left: 0rem;
   }
 
+  #imagem {
+    height: 13rem;
+    margin: 0rem 2rem;
+  }
+
+  #campo{
+    font-size: 1.2rem;
+  }
+
+  #texto-trocar {
+    font-size: 1rem;
+  
+    margin: 0rem 2rem;
+    text-overflow: clip;
+  }
+  
+  #sem-c-especiais {
+    font-size: 1rem;
+    margin: 1rem 2rem;
+    text-overflow: clip;
+  }
+    
   #imagem {
     display: block;
     margin: auto;
