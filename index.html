@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de código</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
+</head>
+
+<body class="principal_config">
+    <header class="header">
+        <a href="index.html"><img class="logo" src="./image/logo.svg" alt="Logo da Alura"></a>
+    </header>
+
+    <main>
+        <section class="texto-area">
+            <div>
+                <textarea id="texto" name="caixatexto" value="" rows="15" cols="30" maxlength="140"
+                    placeholder="Digite o texto aqui!"></textarea>
+
+            </div>
+
+            <div class="observacao">
+                <img src="./image/i.svg" alt="info">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+
+            <div class="botoes">
+                <button id="botao-cripto" onclick="criptografar()" type="text" name="criptografar">Criptografar</button>
+                <button id="botao-descripto" onclick="descriptografar()" type="text"
+                    name="descriptografar">Descriptografar
+                </button>
+            </div>
+        </section>
+
+        <section class="barra-lateral">
+            <div class="info">
+                <div class="bloco">
+                    <img id="imagem" src="./image/erro.svg" alt="Sem mensagem encontrada">
+                    <h3 id="campo">Nenhuma mensagem encontrada</h3>
+                    <p id="texto-trocar">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <p id="sem-c-especiais">O texto não deve conter letras maiúsculas, acentos e caracteres
+                        especiais.</p>
+                </div>
+                <div id="adicionar-botao" style="display: none;">
+                    <button id="copiar" onclick="copiarTexto()" type="text" name="copiar"> Copiar </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>@2024 Desenvolvido por Victor Fernandes!</p>
+    </footer>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
